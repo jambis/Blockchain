@@ -21,7 +21,7 @@ def proof_of_work(block):
     while valid_proof(block_string, proof) is False:
         proof += 1
     end_time = time.time()
-    print(f"Proof took {end_time-start_time}")
+    print(f"Proof took {end_time-start_time:.2f} seconds")
     # return proof
     return proof
 
