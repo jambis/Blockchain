@@ -124,7 +124,7 @@ def mine():
             previous_hash = blockchain.hash(blockchain.last_block)
             block = blockchain.new_block(data['proof'], previous_hash)
             response = {
-                "message": "Success",
+                "message": "New Block Forged",
                 "new_block": block
             }
             return jsonify(response)
